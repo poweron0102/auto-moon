@@ -1,13 +1,13 @@
-workspace = { members = ["macros"] }
 [package]
-name = "auto-moon"
+name = "macros"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+proc-macro = true
+
 [dependencies]
-macroquad = "0.4.4"
-
-macros = { path = "macros" }
-
+syn = "2.0.48"
+quote = "1.0.35"
